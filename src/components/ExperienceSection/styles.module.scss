@@ -1,0 +1,84 @@
+.container {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+
+.content {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+
+    text-align: center;
+
+    background-color: var(--card-background-color);
+
+    border-radius: 0.5rem;
+
+    padding: 3.2rem;
+
+    margin-top: 2rem;
+
+    .card_years {
+        margin-bottom: 1.6rem;
+    }
+
+    img {
+        width: 4.8rem;
+        height: 4.8rem;
+        margin-bottom: 1.6rem;
+    }
+
+    b {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    span {
+        color: var(--details-color);
+    }
+
+    .card_position {
+        margin-top: 0.8rem;
+        margin-bottom: 1.6rem;
+
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
+
+}
+
+.separator_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.separator {
+
+    border: 0.1rem solid var(--details-color);
+    border-radius: 0.5rem;
+    width: 0;
+    height: 2rem;
+
+    margin: 0.8rem 0;
+}
+
+.experiences{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 3.2rem;
+    margin-bottom: 1.6rem;
+    margin-top: -3.2rem;
+
+    &:last-child{
+        margin-bottom: 0;
+    }
+}

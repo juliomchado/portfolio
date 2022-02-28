@@ -4,6 +4,9 @@ import styles from './styles.module.scss';
 import Linkedin from '../../public/images/contacts/linkedin.svg';
 import Github from '../../public/images/contacts/github.svg';
 import Link from 'next/link';
+import { Card } from '../components/Card';
+import { CardsSection } from '../components/CardsSection';
+import { ExperienceSection } from '../components/ExperienceSection';
 
 const Home: NextPage = () => {
   return (
@@ -14,8 +17,14 @@ const Home: NextPage = () => {
       </header>
       <main className={styles.main_container}>
         <hr className={styles.separator} />
-        <p className={styles.description}>Sou apaixonado pela tecnologia, desde criança estudando e resolvendo os problemas das pessoas, todos os dias estudando para entregar o melhor produto e resultado para as pessoas usando o poder e o conforto que só a tecnologia pode trazer para a vida das pessoas.</p>
-        <span className={styles.contacts_container}>
+        <p className={styles.description}>
+          Sou apaixonado pela tecnologia,
+          desde criança estudando e resolvendo os problemas das pessoas,
+          todos os dias estudando para entregar o melhor produto e
+          resultado para as pessoas usando o poder e o conforto que só
+          a tecnologia pode trazer para a vida das pessoas.
+        </p>
+        <nav className={styles.contacts_container}>
           <Link href="/">
             <a>
               <Github />
@@ -26,7 +35,15 @@ const Home: NextPage = () => {
               <Linkedin />
             </a>
           </Link>
-        </span>
+        </nav>
+        <hr className={styles.separator} />
+        <CardsSection title="Experiências">
+          <Card />
+          <ExperienceSection>
+            <Card />
+            <Card />
+          </ExperienceSection>
+        </CardsSection>
       </main>
     </>
   )
