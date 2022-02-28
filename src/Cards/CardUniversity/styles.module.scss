@@ -1,0 +1,51 @@
+.container {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+
+    text-align: center;
+
+    background-color: var(--card-background-color);
+
+    border-radius: 0.5rem;
+
+    padding: 3.2rem;
+
+    margin-top: 2rem;
+
+    .card_years {
+        font-size: 1.6REM;
+        margin-bottom: 1.6rem;
+
+        span {
+            color: var(--details-color);
+        }
+    }
+
+    b {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    p{
+        font-size: 1.6rem;
+        font-weight: 300;
+    }
+
+    .card_position {
+        margin-top: 0.8rem;
+        margin-bottom: 1.6rem;
+
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
+
+}
+
+.separator {
+    width: 0.8rem;
+    border: 0.1rem solid var(--details-color);
+    
+}
